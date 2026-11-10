@@ -266,3 +266,4 @@ ${report.mermaidErDiagram}
 </html>`;
   }
 }
+

@@ -28,3 +28,4 @@ export class MermaidErGenerator {
     return lines.join('\n');
   }
 }
+

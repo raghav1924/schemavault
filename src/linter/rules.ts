@@ -138,3 +138,4 @@ export const ALL_LINTER_RULES: LinterRule[] = [
   RuleUnindexedForeignKey,
   RuleDestructiveChanges,
 ];
+

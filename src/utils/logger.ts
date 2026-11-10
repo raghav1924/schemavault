@@ -37,3 +37,4 @@ export const log = {
   error: (msg: string) => console.error(`${colors.red}✖${colors.reset} ${msg}`),
   dim: (msg: string) => console.log(`${colors.gray}${msg}${colors.reset}`),
 };
+

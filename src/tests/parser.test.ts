@@ -50,3 +50,4 @@ test('RuleDestructiveChanges flags DROP COLUMN and DROP TABLE statements', () =>
   assert.ok(findings.some(f => f.code === 'DATA-001'), 'Flags DROP TABLE');
   assert.ok(findings.some(f => f.code === 'DATA-002'), 'Flags DROP COLUMN');
 });
+

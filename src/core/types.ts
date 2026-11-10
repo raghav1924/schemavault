@@ -44,3 +44,4 @@ export interface SchemaAnalysisReport {
   riskSummary: Record<RiskLevel, number>;
   mermaidErDiagram: string;
 }
+

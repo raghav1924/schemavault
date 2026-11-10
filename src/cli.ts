@@ -120,3 +120,4 @@ ${colors.bold}EXAMPLES:${colors.reset}
   $ schemavault lint . --export ./schema-report.html --mermaid ./erd.mmd
 `);
 }
+
