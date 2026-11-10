@@ -1,0 +1,38 @@
+{
+  "name": "schemavault",
+  "version": "1.0.0",
+  "description": "Developer-first PostgreSQL & Supabase Schema Linter, Destructive Change Detector, ER Diagram Synthesizer & Visual Migration Studio.",
+  "main": "dist/index.js",
+  "bin": {
+    "schemavault": "./dist/bin.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w",
+    "start": "node dist/bin.js",
+    "test": "node --test dist/tests/**/*.test.js"
+  },
+  "keywords": [
+    "postgresql",
+    "supabase",
+    "migrations",
+    "schema",
+    "linter",
+    "er-diagram",
+    "mermaid",
+    "rls",
+    "devops",
+    "developer-tools",
+    "cli"
+  ],
+  "author": "Jatin Sharma <raghavjatin245@gmail.com> (https://jatinsh.netlify.app/)",
+  "homepage": "https://jatinsh.netlify.app/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raghav1924/schemavault.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
