@@ -51,3 +51,13 @@ test('RuleDestructiveChanges flags DROP COLUMN and DROP TABLE statements', () =>
   assert.ok(findings.some(f => f.code === 'DATA-002'), 'Flags DROP COLUMN');
 });
 
+test('RuleDestructiveChanges passes clean additive migration', () => {
+  const safeMigration = `
+    ALTER TABLE users ADD COLUMN phone_number text;
+    CREATE INDEX idx_users_phone ON users(phone_number);
+  `;
+  const findings = RuleDestructiveChanges.auditSqlStatements!(safeMigration);
+  assert.strictEqual(findings.length, 0, 'Safe migration should yield 0 destructive warnings');
+});
+
+
