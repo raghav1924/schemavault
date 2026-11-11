@@ -1,0 +1,21 @@
+name: Bug Report
+description: Create a report to help improve SchemaVault
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for filing a bug report for SchemaVault!
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the bug encountered and expected behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: migration-sample
+    attributes:
+      label: SQL Migration Sample
+      description: Sample SQL snippet (redacting any proprietary table names).
+    validations:
+      required: false
