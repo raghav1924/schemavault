@@ -19,3 +19,4 @@ body:
       description: Sample SQL snippet (redacting any proprietary table names).
     validations:
       required: false
+

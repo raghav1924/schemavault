@@ -16,3 +16,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Embedded dark-mode Migration Studio on `http://localhost:4880` with visual ER canvas and remediation snippets.
 - Standalone single-file HTML report export (`--export schema-audit.html`).
 - Automated CI/CD gates (`--fail-on critical`, `--min-score 85`).
+
