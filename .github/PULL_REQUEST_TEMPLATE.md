@@ -14,3 +14,4 @@ Brief summary of the SQL parser, migration heuristic, or ER diagram feature intr
 - [ ] My code adheres to TypeScript strict mode
 - [ ] Unit tests pass cleanly (`npm test`)
 - [ ] Zero external runtime dependencies maintained
+
