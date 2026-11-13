@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert';
 import { SqlParser } from '../core/parser.js';
 import { SchemaEngine } from '../core/engine.js';
-import { RuleMissingRls, RuleDestructiveChanges } from '../linter/rules.js';
+import { RuleMissingRls, RuleDestructiveChanges, RuleMissingPrimaryKey } from '../linter/rules.js';
 
 test('SqlParser extracts tables, columns, primary keys, and foreign keys', () => {
   const sql = `
@@ -59,5 +59,19 @@ test('RuleDestructiveChanges passes clean additive migration', () => {
   const findings = RuleDestructiveChanges.auditSqlStatements!(safeMigration);
   assert.strictEqual(findings.length, 0, 'Safe migration should yield 0 destructive warnings');
 });
+
+test('RuleMissingPrimaryKey flags tables without primary key constraints', () => {
+  const sql = `
+    CREATE TABLE audit_log (
+      event_name text,
+      timestamp timestamp
+    );
+  `;
+  const tables = SqlParser.parseSqlContent(sql);
+  const findings = RuleMissingPrimaryKey.auditTables!(tables);
+
+  assert.ok(findings.some(f => f.code === 'PK-001'), 'Flags missing PK');
+});
+
 
 
