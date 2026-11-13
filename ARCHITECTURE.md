@@ -45,3 +45,4 @@ SchemaVault flags migrations that:
 - Execute `DROP TABLE` or `DROP COLUMN` without safe deprecation windows.
 - Create foreign keys without companion indexes on the referencing table, causing full-table sequential scans during JOINs and CASCADE operations.
 - Create public Supabase tables without enabling Row Level Security (RLS).
+
