@@ -17,3 +17,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Standalone single-file HTML report export (`--export schema-audit.html`).
 - Automated CI/CD gates (`--fail-on critical`, `--min-score 85`).
 
+
+## [1.1.0] - 2026-11-15
+### Added
+- Destructive migration pattern guide and table locking mitigations.
+- Supabase Row Level Security policy audit specifications.
+- Foreign key indexing guidelines and Mermaid ERD documentation.
