@@ -23,3 +23,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Destructive migration pattern guide and table locking mitigations.
 - Supabase Row Level Security policy audit specifications.
 - Foreign key indexing guidelines and Mermaid ERD documentation.
+
+## [1.2.0] - 2026-11-16
+### Added
+- Master design system documentation (Neo-classical, Bento Grid).
+- PostgreSQL table lock level analysis and mitigation guide.
+- Zero-downtime expand-and-contract migration patterns.
