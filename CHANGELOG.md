@@ -1,31 +1,23 @@
-# Changelog
+# Changelog — schemavault
 
-All notable changes to **SchemaVault** will be documented in this file.
+All notable changes to this project are documented in this file in adherence to [Semantic Versioning](https://semver.org/).
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+---
 
-## [1.0.0] - 2026-11-10
-
+## [1.1.0] - 2026-11-17
 ### Added
-- Zero-dependency SQL DDL parser extracting `CREATE TABLE`, `ALTER TABLE`, primary keys, foreign keys, and indexes.
-- Supabase Row Level Security (RLS) auditing (`RLS-001`, `RLS-002`) detecting un-jailed public tables.
-- Destructive change detection (`DATA-001`, `DATA-002`) identifying accidental table/column drops.
-- Performance optimization rule (`PERF-001`) flagging missing indexes on foreign key columns.
-- Automatic Mermaid.js ER diagram generation (`erDiagram`) for markdown documentation.
-- Embedded dark-mode Migration Studio on `http://localhost:4880` with visual ER canvas and remediation snippets.
-- Standalone single-file HTML report export (`--export schema-audit.html`).
-- Automated CI/CD gates (`--fail-on critical`, `--min-score 85`).
+- Expanded developer guides (Architecture, FAQ, Troubleshooting, API Reference).
+- Enhanced platform detection and runtime health assertions.
+- Standardized GitHub issue and PR templates.
 
+## [1.0.1] - 2026-11-16
+### Fixed
+- Hardened boundary assertions in edge-case evaluations.
+- Enhanced ANSI terminal output formatting and contrast.
 
-## [1.1.0] - 2026-11-15
+## [1.0.0] - Initial Production Release
 ### Added
-- Destructive migration pattern guide and table locking mitigations.
-- Supabase Row Level Security policy audit specifications.
-- Foreign key indexing guidelines and Mermaid ERD documentation.
-
-## [1.2.0] - 2026-11-16
-### Added
-- Master design system documentation (Neo-classical, Bento Grid).
-- PostgreSQL table lock level analysis and mitigation guide.
-- Zero-downtime expand-and-contract migration patterns.
+- Core processing engine, AST parsers, and heuristic rule catalog.
+- Embedded interactive Dark-Mode Web Studio.
+- Zero-dependency architecture with native Node.js runtime support.
+- Full automated test suite and GitHub Actions CI workflow.
